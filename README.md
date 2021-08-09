@@ -8,14 +8,29 @@ English | [Portuguese](./README.pt-br.md)
 [![Latest Commit][commit-src]][commit-href]
 [![License][license-src]][license-href]
 
+#### PersonaAPI is a project developed with Spring Boot for a Bootcamp from [Digital Innovation One](https://digitalinnovation.one/), with the objective of developing a small system for managing company's people throught a REST API.
+
 </div>
 
+## How to Use
 
+First, clone this repository, access the directory and run the following command to execute the API:
 
+```bash
+$ ./gradlew bootRun
+> Task :bootRun
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+:: Spring Boot ::
+```
 
+From then on, the API should already be working. To access the database management console, go to:
 
-
-
+> localhost:8080/database/h2
 
 
 
