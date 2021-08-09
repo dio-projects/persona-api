@@ -7,7 +7,7 @@ import org.mapstruct.factory.Mappers;
 import io.schuberty.dio.personaapi.model.persona.Person;
 import io.schuberty.dio.personaapi.system.dto.request.PersonDTO;
 
-@Mapper
+@Mapper(componentModel = "spring")
 public interface PersonMapper {
 
     PersonMapper INSTANCE = Mappers.getMapper(PersonMapper.class);

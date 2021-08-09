@@ -35,17 +35,16 @@ public class PersonServiceTest {
     @Test
     public void shouldCreateThenReturnSuccessMessage() {
         PersonDTO personDTO = createFakeDTO();
-        Person expectedSavedPerson = createFakeEntity();
+        Person person = createFakeEntity();
 
-        lenient().when(this.personMapper.toModel(personDTO)).thenReturn(expectedSavedPerson);
-        lenient().when(this.personRepository.save(any(Person.class))).thenReturn(expectedSavedPerson);
+        lenient().when(this.personMapper.toModel(personDTO)).thenReturn(person);
+        lenient().when(this.personRepository.save(any(Person.class))).thenReturn(person);
 
-        MessageResponseDTO expectedSuccessMessage = createExpectedSuccessMessage(expectedSavedPerson.getId());
+        MessageResponseDTO expectedSuccessMessage = createExpectedSuccessMessage(person.getId());
         MessageResponseDTO successMessage = this.personService.create(personDTO);
 
         assertEquals(expectedSuccessMessage.getMessage(), successMessage.getMessage());
     }
-
 
     private MessageResponseDTO createExpectedSuccessMessage(Long id) {
         return MessageResponseDTO
@@ -53,5 +52,4 @@ public class PersonServiceTest {
             .message("Created person with ID " + id)
             .build();
     }
-
 }
