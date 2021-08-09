@@ -41,7 +41,7 @@ Check the [application.yml](src/main/resources/application.yml) file to see the 
 ```yml
 spring:
     datasource:
-        url: jdbc:${database}:file:..\.datasources\persona-api
+        url: jdbc:${database}:file:./.datasources/persona-api
         username: dbuser
         password:
 ```
