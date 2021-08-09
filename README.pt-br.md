@@ -36,7 +36,7 @@ Ou para ter acesso ao console do gerenciamento de banco de dados, acesse:
 
 > http://localhost:8080/database/h2
 
-Para ter acesso ao console, entre no arquivo [application.yml](src/main/resources/application.yml) para ver as variáveis definidas. Sendo por padrão:
+Verifique o arquivo [application.yml](src/main/resources/application.yml) para ver as variáveis definidas do banco de dados. Sendo por padrão:
 
 ```yml
 spring:

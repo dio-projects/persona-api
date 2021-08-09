@@ -32,9 +32,11 @@ From then on, the API should already be working. To check it, go to:
 
 > http://localhost:8080/api/v1/person
 
-Or to access the console, enter the [application.yml](src/main/resources/application.yml) file to see the defined variables. By default:
+Or to access the database management console, go to:
 
 > http://localhost:8080/database/h2
+
+Check the [application.yml](src/main/resources/application.yml) file to see the defined variables of the database. By default:
 
 ```yml
 spring:
