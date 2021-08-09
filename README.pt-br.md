@@ -1,4 +1,4 @@
-English | [Portuguese](./README.pt-br.md)
+[English](./README.md) | Portuguese
 
 <h1 align="center">PersonaAPI</h1>
 
