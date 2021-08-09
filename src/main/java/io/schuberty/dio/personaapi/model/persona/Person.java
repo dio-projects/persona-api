@@ -1,4 +1,4 @@
-package io.schuberty.dio.personaapi.model;
+package io.schuberty.dio.personaapi.model.persona;
 
 import java.time.LocalDate;
 import java.util.List;
@@ -16,14 +16,16 @@ import org.hibernate.validator.constraints.br.CPF;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
-import lombok.Data;
+import lombok.Getter;
 import lombok.NoArgsConstructor;
+import lombok.Setter;
 
-@Entity
-@Data
+@Getter
+@Setter
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
+@Entity
 public class Person {
     
     @Id
