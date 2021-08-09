@@ -28,11 +28,13 @@ $ ./gradlew bootRun
 :: Spring Boot ::
 ```
 
-From then on, the API should already be working. To access the database management console, go to:
+From then on, the API should already be working. To check it, go to:
 
-> localhost:8080/database/h2
+> http://localhost:8080/api/v1/person
 
-To access the console, enter the [application.yml](src/main/resources/application.yml) file to see the defined variables. By default:
+Or to access the console, enter the [application.yml](src/main/resources/application.yml) file to see the defined variables. By default:
+
+> http://localhost:8080/database/h2
 
 ```yml
 spring:
