@@ -12,8 +12,6 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.OneToMany;
 
-import org.hibernate.validator.constraints.br.CPF;
-
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Getter;
@@ -38,7 +36,6 @@ public class Person {
     @Column(nullable = false)
     private String lastName;
 
-    @CPF
     @Column(nullable = false, unique = true)
     private String cpf;
 
