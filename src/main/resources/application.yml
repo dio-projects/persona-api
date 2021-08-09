@@ -1,0 +1,17 @@
+server:
+    port: 8085
+
+spring:
+    h2:
+        console:
+            enabled: true
+            path: /database/h2
+    datasource:
+        url: jdbc:h2:file:..\.datasources\persona-api
+        username: admin
+        password:
+        driver-class-name: org.h2.Driver
+    jpa:
+        hibernate:
+            ddl-auto: update
+        show-sql: true
