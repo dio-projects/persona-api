@@ -32,13 +32,15 @@ From then on, the API should already be working. To access the database manageme
 
 > localhost:8080/database/h2
 
+To access the console, enter the [application.yml](src/main/resources/application.yml) file to see the defined variables. By default:
 
-
-
-
-
-
-
+```yml
+spring:
+    datasource:
+        url: jdbc:${database}:file:..\.datasources\persona-api
+        username: dbuser
+        password:
+```
 
 [java-src]: https://img.shields.io/badge/java-11-orange
 [java-href]: https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.12+7/OpenJDK11U-jdk_x64_windows_hotspot_11.0.12_7.msi
