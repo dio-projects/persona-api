@@ -22,7 +22,7 @@ public class PersonService {
 
     private final PersonMapper personMapper = PersonMapper.INSTANCE;
 
-    public MessageResponseDTO createPerson(PersonDTO personDTO) {
+    public MessageResponseDTO create(PersonDTO personDTO) {
         Person person = this.personMapper.toModel(personDTO);
         Person createdPerson = this.personRepository.save(person);
         return createMessageResponse("Created person with ID " + createdPerson.getId());
